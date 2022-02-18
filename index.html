@@ -1,0 +1,72 @@
+<!--TODO: Fikse bekrefte passord. Lage en onsubmit på selve formet og kjøre en funksjon i JS som sjekker dette? Lurt?-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" defer></script>
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+           <div class="pictext"> <img src="./1-2-ghost-png-pic_800x800.png" class="ghost"> <br> Come!!<br> Let us <br> Play!</div>
+            <img src="./joel-abraham-8RRYJg26Wr4-unsplash.jpeg" alt="">
+        </div>
+        <div class="mainsection">
+            <div class="header">
+                This is not real. However what is? Anyhow, you should totally sign up here <br>
+                It's like really awesome, and you can probably win something (assuming if this was real, which it's not by the way). <br>
+                What are <i>you</i> waiting for?
+                <br><br>
+               <i>SPEND SPEND SPEND</i>
+            </div>
+            <form onsubmit="formCheck()" >
+                <fieldset>
+                    <div class="text">
+                        Mo' money mo' problems yo!
+                    </div>
+                    <div class="row1">
+                        <label for="fname">FIRST NAME</label>
+                        <input type="text" name="" id="name">
+                    </div>
+                    <div class="row1">
+                        <label for="lname">LAST NAME</label>
+                        <input type="text" name="" id="lname">
+                    </div>
+                    <br>
+                    <div class="row2">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="row2">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                    <br>
+                    <div class="row3">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" class="error">
+                    </div>
+                    <div class="row3">
+                        <label for="password2">CONFIRM PASSWORD</label>
+                        <input type="password" name="password2" id="password2" class="error">
+                    </div>
+                </fieldset>
+                <br>
+                <div>
+                    <button type="submit">Create Account</button>
+                </div>
+                <div class="bottext">
+                    Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">Log in</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>

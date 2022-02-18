@@ -1,0 +1,184 @@
+@font-face {
+    font-family: '8bit';
+    src: url(./PressStart2P-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url(./Roboto/Roboto-Medium.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto';
+}
+.container{
+    height: 100vh;
+    display: flex;
+}
+
+.header + i{
+    display: flex;
+
+}
+
+.header{
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    margin-left: 2rem;
+}
+
+
+
+.sidebar{
+    display: flex;
+    position: relative;
+    justify-items: center;
+}
+
+
+.pictext{
+    white-space: nowrap;
+    text-align: center;
+    font-family: '8bit';
+    font-size: 3rem;
+    position: absolute;
+    color: white;
+    width: 100%;
+    opacity: 0.8;
+    margin-top: 30%;
+
+}
+
+.mainsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 248, 248);
+}
+form{
+    display: table;
+    margin: 0;
+    padding: 0;
+    width: 65vw;
+}
+
+fieldset{
+    box-shadow: 3px 3px 3px rgb(149, 148, 148);
+    border: 0;
+    background-color: white;
+}
+
+label, input {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+label{
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+input{
+    width: 16rem;
+    height: 1.7rem;
+}
+
+
+.text{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.row1{
+    display: table-cell;
+}
+
+ .row2{
+    display: table-cell;
+}
+
+.row3{
+    display: table-cell;
+}
+
+button, input{
+    font-family: inherit;
+}
+button{
+    margin: 1rem;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    width: 12rem;
+    border-radius: 5px;
+    color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(280deg, rgba(2,0,36,1) 0%, rgba(194,42,42,1) 100%, rgba(0,212,255,1) 100%);
+}
+.bottext, button{
+    margin-left: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(139, 2, 2)
+}
+
+img{
+    width: 35vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-attachment: fixed;
+}
+
+.ghost{
+    width: 40%;
+}
+
+.ghost:hover{
+    opacity: 0.1;
+}
+
+#lname:focus{
+    border: 3px solid blue;
+    box-shadow: 5px 5px 5px rgb(156, 156, 156);
+}
+
+@media only screen and (max-width: 800px) {
+
+
+    .mainsection{
+        background-image: url(./joel-abraham-8RRYJg26Wr4-unsplash.jpeg);
+        background-position: center;
+        color: white;
+    }
+    form{
+        color: black;
+    }
+
+    .bottext{
+        color: white;
+    }
+    a{
+        color: greenyellow;
+    }
+
+    .sidebar{
+        display: none;
+    }
+
+    .row1{
+        display: table-row;
+    }
+    .row2{
+        display: table-row;
+    }
+    .row3{
+        display: table-row;
+    }
+}
