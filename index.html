@@ -31,34 +31,34 @@
                     </div>
                     <div class="row1">
                         <label for="fname">FIRST NAME</label>
-                        <input type="text" name="" id="name">
+                        <input type="text" name="" id="name" required>
                     </div>
                     <div class="row1">
                         <label for="lname">LAST NAME</label>
-                        <input type="text" name="" id="lname">
+                        <input type="text" name="" id="lname" required>
                     </div>
                     <br>
                     <div class="row2">
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
                     <div class="row2">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="phone" id="phone">
+                        <input type="tel" name="phone" id="phone" required>
                     </div>
                     <br>
                     <div class="row3">
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password" class="error">
+                        <input type="password" name="password" id="password" class="error" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
                     </div>
                     <div class="row3">
                         <label for="password2">CONFIRM PASSWORD</label>
-                        <input type="password" name="password2" id="password2" class="error">
+                        <input type="password" name="password2" id="password2" class="error" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must match" required>
                     </div>
                 </fieldset>
                 <br>
                 <div>
-                    <button type="submit">Create Account</button>
+                    <button type="submit" class="botbutton">Create Account</button>
                 </div>
                 <div class="bottext">
                     Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">Log in</a>

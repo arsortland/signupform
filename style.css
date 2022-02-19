@@ -106,6 +106,19 @@ input{
     display: table-cell;
 }
 
+.error:invalid{
+    border: 0;
+    border: 3px solid red;
+}
+
+.error:valid{
+    border: 3px solid green;
+}
+
+span{
+    display: none;
+}
+
 button, input{
     font-family: inherit;
 }
@@ -152,10 +165,16 @@ img{
 @media only screen and (max-width: 800px) {
 
 
+
     .mainsection{
         background-image: url(./joel-abraham-8RRYJg26Wr4-unsplash.jpeg);
         background-position: center;
         color: white;
+    }
+
+    .header{
+        font-size: 1rem;
+        margin-top: 5rem;
     }
     form{
         color: black;
@@ -181,4 +200,11 @@ img{
     .row3{
         display: table-row;
     }
+
+    .bottext{
+        display: flex;
+        flex-direction: column;
+        color: black ;
+    }
+
 }
