@@ -87,6 +87,10 @@ input{
     height: 1.7rem;
 }
 
+input:focus{
+    outline: none;
+}
+
 
 .text{
     padding-top: 1rem;
@@ -106,7 +110,7 @@ input{
     display: table-cell;
 }
 
-.error:invalid{
+.error:focus:invalid{
     border: 0;
     border: 3px solid red;
 }
